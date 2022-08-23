@@ -1,4 +1,7 @@
 @media screen and (max-width: 770px) {
+  body {
+    background-color: inherit;
+  }
   body nav .menu {
     display: block;
   }
@@ -28,6 +31,7 @@
   }
   body .cards-container {
     grid-template-columns: repeat(auto-fill, 150px);
+    padding: 12px 0 12px 0;
     gap: 24px;
   }
   body .cards-container .product-card {

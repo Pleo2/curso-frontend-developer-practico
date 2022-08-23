@@ -72,6 +72,8 @@ body nav .navbar-right ul .navbar-email {
   margin-right: 12px;
   transition: color 300ms;
   transition: transform 300ms;
+  display: flex;
+  z-index: 5;
 }
 body nav .navbar-right ul .navbar-email:active {
   transform: scale(1.1);
@@ -83,6 +85,8 @@ body nav .navbar-right ul .navbar-shopping-cart {
   cursor: pointer;
   position: relative;
   transition: transform 300ms;
+  display: flex;
+  z-index: 5;
 }
 body nav .navbar-right ul .navbar-shopping-cart:active {
   transform: scale(1.1);
@@ -103,6 +107,8 @@ body nav .navbar-right ul .navbar-shopping-cart div {
 }
 
 body .inactive {
+  position: absolute;
+  transition: 400ms;
   display: none;
 }
 body .desktop-menu {
@@ -115,6 +121,8 @@ body .desktop-menu {
   height: auto;
   border-radius: 10px;
   padding: 20px 20px 0 20px;
+  z-index: 3;
+  transition: 300ms;
 }
 body .desktop-menu ul {
   list-style: none;
@@ -156,7 +164,8 @@ body .desktop-menu ul li:last-child a:hover {
 }
 
 .inactive-mobile {
-  display: none;
+  opacity: 0;
+  transition: 300ms;
 }
 
 .mobile-menu {
@@ -164,6 +173,7 @@ body .desktop-menu ul li:last-child a:hover {
   background-color: #FFFFFF;
   box-shadow: 0px 0px 60px 10px rgba(0, 0, 0, 0.1);
   position: absolute;
+  z-index: 4;
   top: 61px;
   left: 0;
   right: 0;
@@ -171,6 +181,7 @@ body .desktop-menu ul li:last-child a:hover {
   border-radius: 10px;
   background-color: #FFFFFF;
   padding: 14px;
+  transition: 300ms;
 }
 .mobile-menu ul {
   padding: 0;
@@ -202,11 +213,18 @@ body .desktop-menu ul li:last-child a:hover {
   width: 300px;
   padding: 0 0 24px 0;
   border-radius: 16px;
-  position: absolute;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translatey(-50%);
+  margin: 0 auto;
   box-shadow: 0px 0px 60px 10px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+  transition: 300ms;
 }
 .product-detail .product-detail-close {
-  background: rgb(62, 58, 110);
+  background: #FFFFFF;
   width: 14px;
   height: 14px;
   position: absolute;
@@ -220,9 +238,9 @@ body .desktop-menu ul li:last-child a:hover {
 .product-detail .product-detail-close:hover {
   cursor: pointer;
 }
-.product-detail .product-detail-close img {
-  width: 14px;
-  height: 14px;
+.product-detail .product-detail-close .img-close__product-detail {
+  width: 100%;
+  height: 100%;
 }
 .product-detail img {
   width: 100%;
@@ -284,6 +302,8 @@ aside {
   box-sizing: border-box;
   position: absolute;
   right: 0;
+  z-index: 3;
+  transition: 300ms;
 }
 aside .title-container {
   display: flex;
@@ -360,11 +380,13 @@ aside .primary-button {
 }
 
 .cards-container {
-  margin: 26px 12px 40px 12px;
+  margin: 0px 12px 40px 12px;
+  padding: 24px 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, 280px);
   gap: 40px;
   place-content: center;
+  transition: 300ms;
 }
 .cards-container .product-card {
   border-radius: 10px;
@@ -413,7 +435,16 @@ aside .primary-button {
   transform: scale(1.1);
 }
 
+.blur-darken {
+  filter: blur(5px);
+  background-color: rgba(31, 23, 34, 0);
+  transition: 300ms;
+}
+
 @media screen and (max-width: 770px) {
+  body {
+    background-color: inherit;
+  }
   body nav .menu {
     display: block;
   }
@@ -443,6 +474,7 @@ aside .primary-button {
   }
   body .cards-container {
     grid-template-columns: repeat(auto-fill, 150px);
+    padding: 12px 0 12px 0;
     gap: 24px;
   }
   body .cards-container .product-card {
@@ -506,6 +538,7 @@ aside .primary-button {
 }
 @media screen and (min-width: 769px) {
   .mobile-menu {
+    overflow: hidden;
     display: none;
   }
 }

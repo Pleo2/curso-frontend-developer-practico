@@ -6,28 +6,36 @@ const desktopMenu = document.querySelector(".desktop-menu"); //! ==> la etiqueta
 const menuHamburger = document.querySelector(".menu");
 const mobileMenu = document.querySelector(".mobile-menu");
 
-//* product-detail
+//* shopping-cart-details
 const shopCart = document.querySelector(".navbar-shopping-cart");
 const shoppingCartDetail = document.querySelector(".shopping-cart-Detail");
+
 //* render-products
 
 const cardsContainer = document.querySelector('.cards-container');
 
+//* product detail 
+const productDetail = document.querySelector('.product-detail');
+const CloseImgProductDetail = document.querySelector('.product-detail-close')
+
+//*
+const main = document.querySelector('main')
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 menuEmail.addEventListener("click", toggleDesktopMenu); //t creamos el metodo para escuchar, definimos la accion + declaramos lo 'function a llamar'=> que realizara la accion
 menuHamburger.addEventListener("click", toggleMobileMenu); //t menuHamburger
 shopCart.addEventListener("click", toggleShopCartMenu); //t shopCart
-
+CloseImgProductDetail.addEventListener('click', closeProductDetail);//t 
 //************************************************************************************************************************************************************************* */
 
 //* Desktop menu
 function toggleDesktopMenu() {
   shoppingCartDetail.classList.add("inactive");
-  desktopMenu.classList.toggle("inactive"); // ! ==> mediante el metodo de 'manipulacion de clase' de la accion 'toggle' -> seleccionamos la
-  //!                                                clase a modificar.
+  productDetail.classList.add('inactive');
+  main.classList.remove('blur-darken');
+  desktopMenu.classList.toggle("inactive");
+//! ==> mediante el metodo de 'manipulacion de clase' de la accion 'toggle' -> agrega y quita "clases" dependiendo de su estado.
 }
-
 //* mobile menu
 
 function toggleMobileMenu() {
@@ -40,9 +48,32 @@ function toggleMobileMenu() {
 function toggleShopCartMenu() {
   desktopMenu.classList.add("inactive");
   mobileMenu.classList.add("inactive");
+  productDetail.classList.add('inactive');
+  main.classList.remove('blur-darken');
   shoppingCartDetail.classList.toggle("inactive");
 }
 
+//* product detail 
+
+function openProductDetail() {
+  desktopMenu.classList.add("inactive");
+  mobileMenu.classList.add("inactive");
+  shoppingCartDetail.classList.add("inactive");
+  productDetail.classList.remove('inactive');
+
+  //.efectBlur
+
+  main.classList.add('blur-darken');
+  
+}
+
+//close 
+
+function closeProductDetail() {
+  productDetail.classList.add('inactive');
+  //.efectBlur
+  main.classList.remove('blur-darken');
+}
 //t solucion de el profesor
 
 /*
@@ -102,25 +133,26 @@ function toggleShopCartMenu() {
     shoppingCartDetail.classList.toggle("inactive");
 }
 
- */
 
-//! creacion de el HTML desde javaScript 
+creacion de el HTML desde javaScript 
 
-// <div class="product-card">
-// <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+<div class="product-card">
+<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
 
-// <div class="product-info">
-//   <div>
-//     <p>$120,00</p>
+div class="product-info">
+<div>
+<p>$120,00</p>
 
-//     <p>Bike</p>
-//   </div>
+<p>Bike</p>
+</div>
 
-//   <figure>
-//     <img src="./icons/bt_add_to_cart.svg" alt="">
-//   </figure>
-// </div>
-// </div>
+<figure>
+<img src="./icons/bt_add_to_cart.svg" alt="">
+</figure>
+div>
+div>
+
+*/
 
 const productList = [];
 
@@ -163,8 +195,7 @@ productList.push({
   name: 'Computadora',
   price: 1200,
   Image: 'https://i.blogs.es/37561e/superpc-1/450_1000.jpeg',  
-});2
-
+});
 productList.push({
   name: 'Ipad',
   price: 600,
@@ -214,7 +245,8 @@ productList.push({
   name: 'Teclado',
   price: 240,
   Image: 'https://imagenes.elpais.com/resizer/5ZHoiuLyeC3PEx1cfrmw89gvjLs=/1960x1470/cloudfront-eu-central-1.images.arcpublishing.com/prisa/XT4KHFWNPZFHNDETQCDLFINJLU.png',  
-});productList.push({
+})
+;productList.push({
   name: 'Bici',
   price: 300,
   Image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', 
@@ -258,6 +290,7 @@ function renderProduct(arr) {
 
     const imgProduct = document.createElement('img');
     imgProduct.setAttribute('src', property.Image);
+    imgProduct.addEventListener("click", openProductDetail); 
 
     const productInfo = document.createElement('div');
     productInfo.classList.add('product-info');  
