@@ -241,8 +241,96 @@ body {
     }
 }
 
+//! aside ==> (product-detail)
 
-//! ==>Aside->(product-detail)
+.product-detail {
+    width: 300px;
+    padding: 0 0 24px 0;
+    border-radius: 16px;
+    position: absolute;
+    box-shadow: 0px 0px 60px 10px rgba(0,0,0,0.1);
+
+    .product-detail-close {
+        background: $hospital-green;
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        top: 24px;
+        left: 24px;
+        z-index: 2;
+        padding: 12px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 60px 10px rgba(0,0,0,0.1);
+    
+        &:hover{
+            cursor: pointer;
+        }
+        img{
+            width: 14px;
+            height: 14px;
+        }
+    }
+
+    img{
+        width: 100%;
+        height: 270px;
+        padding: 0;
+        margin: 0;
+        object-fit: cover;
+        border-radius: 16px 16px 0 0;
+    }
+    
+    .product-info {
+        margin: 16px 16px 0 16px;
+        p{
+            &:nth-child(1) {
+            font-weight: bold;
+            font-size: $md;
+            margin-top: 0;
+            margin-bottom: 4px;
+            }
+
+            &:nth-child(2) {
+                color: $very-light-pink;
+                font-size: var(--md);
+                margin-top: 0;
+                margin-bottom: 24px;
+            }
+            &:nth-child(3) {
+                color: $very-light-pink;
+                font-size: $sm;
+                margin-top: 0;
+                margin-bottom: 24px;
+            }
+        }
+
+        .primary-button {
+            background-color: $hospital-green;
+            border-radius: 12px;
+            border: none;
+            color: $white;
+            width: 100%;
+            cursor: pointer;
+            font-size: $md;
+            font-weight: bold;
+            height: 50px;
+        }
+        
+        .add-to-cart-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img{
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+
+//! ==>Aside->(shopping-cart-Detail.)
 
 aside {
     margin-right: 18px;
@@ -345,10 +433,10 @@ aside {
 
 // ! ==> product List.
 .cards-container {
-        margin: 26px 0 40px 0;
+        margin: 26px 12px 40px 12px;
         display: grid;
         grid-template-columns: repeat(auto-fill, 280px);
-        gap: 64px;
+        gap: 40px;
         place-content: center;
         
         .product-card {

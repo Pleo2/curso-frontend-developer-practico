@@ -8,8 +8,7 @@ const mobileMenu = document.querySelector(".mobile-menu");
 
 //* product-detail
 const shopCart = document.querySelector(".navbar-shopping-cart");
-const shoppingCartDetail = document.querySelector(".product-detail");
-
+const shoppingCartDetail = document.querySelector(".shopping-cart-Detail");
 //* render-products
 
 const cardsContainer = document.querySelector('.cards-container');
@@ -164,7 +163,8 @@ productList.push({
   name: 'Computadora',
   price: 1200,
   Image: 'https://i.blogs.es/37561e/superpc-1/450_1000.jpeg',  
-});
+});2
+
 productList.push({
   name: 'Ipad',
   price: 600,
