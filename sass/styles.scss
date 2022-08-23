@@ -101,7 +101,7 @@ body {
                     position: relative;
                     transition: transform 300ms;
                     &:active{
-                        transform: scale(1.2);
+                        transform: scale(1.1);
                     }
             
                     div {
@@ -198,13 +198,15 @@ body {
 .inactive-mobile{
     display: none;
 }
-.mobile-menu {  
-    margin-left: 22px;
+.mobile-menu {
+    width: 80%;  
     background-color: $white;
     box-shadow: 0px 0px 60px 10px rgba(0,0,0,0.1);
     position: absolute;
     top: 61px;
     left: 0;
+    right: 0;
+    margin: 0 auto;
     border-radius: 10px;
     background-color: $white;
     padding: $sm;
