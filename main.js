@@ -8,7 +8,7 @@ const mobileMenu = document.querySelector(".mobile-menu");
 
 //* product-detail
 const shopCart = document.querySelector(".navbar-shopping-cart");
-const productDetail = document.querySelector(".product-detail");
+const shoppingCartDetail = document.querySelector(".product-detail");
 
 //* render-products
 
@@ -24,7 +24,7 @@ shopCart.addEventListener("click", toggleShopCartMenu); //t shopCart
 
 //* Desktop menu
 function toggleDesktopMenu() {
-  productDetail.classList.add("inactive");
+  shoppingCartDetail.classList.add("inactive");
   desktopMenu.classList.toggle("inactive"); // ! ==> mediante el metodo de 'manipulacion de clase' de la accion 'toggle' -> seleccionamos la
   //!                                                clase a modificar.
 }
@@ -32,7 +32,7 @@ function toggleDesktopMenu() {
 //* mobile menu
 
 function toggleMobileMenu() {
-  productDetail.classList.add("inactive");
+  shoppingCartDetail.classList.add("inactive");
   mobileMenu.classList.toggle("inactive");
 }
 
@@ -41,7 +41,7 @@ function toggleMobileMenu() {
 function toggleShopCartMenu() {
   desktopMenu.classList.add("inactive");
   mobileMenu.classList.add("inactive");
-  productDetail.classList.toggle("inactive");
+  shoppingCartDetail.classList.toggle("inactive");
 }
 
 //t solucion de el profesor
@@ -51,16 +51,15 @@ function toggleShopCartMenu() {
 
 !   const menuEmail = document.querySelector('.navbar-email'); //! ==> selecionamos primero la etiqueta que deamos escuchar la accion
 !   const desktopMenu = document.querySelector('.desktop-menu'); //! ==> la etiqueta que necesitamos modificar al hacer click ('toggle', aparesca y 
-!                                                                  desaparesca)
-!   const menuHamburger = document.querySelector('.menu');
+!                              productDetailent.querySelector('.menu');
 !   const mobileMenu = document.querySelector(".mobile-menu");
 !   const shopCart = document.querySelector('.navbar-shopping-cart')
-!   const productDetail = document.querySelector('.product-detail');
+!   const shoppingCartDetail = document.querySelector('.product-detail');
 
 * ==>function
 
 !        function toggleDesktopMenu() {
-!           productDetail.classList.add("inactive");
+!           shoppingCartDetail.classList.add("inactive");
 !           desktopMenu.classList.toggle("inactive"); ==> mediante el metodo de 'manipulacion de clase' de la accion 'toggle' -> seleccionamos la
 !                                                         clase a modificar.
 !   }
@@ -73,7 +72,7 @@ function toggleDesktopMenu() {
     const isDesktopMenuClose = desktopMenu.listClass.contain('inactive');
     
     if (!isDesktopMenuClose){
-        productDetail.classList.add("inactive");
+        shoppingCartDetail.classList.add("inactive");
     }
     desktopMenu.classList.toggle("inactive"); // ! ==> mediante el metodo de 'manipulacion de clase' de la accion 'toggle' -> seleccionamos la
 !                                                      clase a modificar.
@@ -86,7 +85,7 @@ function toggleMobileMenu() {
     const isMobileMenuClose = mobileMenu.listClass.contain('inactive');
     
     if (!isMobileMenuClose){
-        productDetail.classList.add("inactive");
+        shoppingCartDetail.classList.add("inactive");
     }
 
     mobileMenu.classList.toggle("inactive");
@@ -96,12 +95,12 @@ function toggleMobileMenu() {
 
 function toggleShopCartMenu() {
 
-    const isProductDetailClose = productDetail.listClass.contain('inactive');
+    const isProductDetailClose = shoppingCartDetail.listClass.contain('inactive');
     if(!isProductDetailClose){
         desktopMenu.classList.add("inactive");
         mobileMenu.classList.add("inactive");
     }
-    productDetail.classList.toggle("inactive");
+    shoppingCartDetail.classList.toggle("inactive");
 }
 
  */
