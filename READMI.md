@@ -6,7 +6,7 @@ A su vez, converti todo el codigo `css` => `sass`, el cual se me dificulto con e
 
 Como tambien me tome el atrevimiento de optimizar todas las imagenes originales comprimiendolas en webp y modificando tanto su calidad como sus dimensiones, para que se ajusten a los requerimientos de nuestra pagina.
 
-[Pagina Desplegada en github](link para ver el proyecto)
+[Pagina Desplegada en github](https://pleo2.github.io/curso-frontend-developer-practico/)
 
 ## Mi version de el curso de JavaScript
 
