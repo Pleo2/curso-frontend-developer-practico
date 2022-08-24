@@ -395,6 +395,7 @@ aside .primary-button {
   width: 280px;
 }
 .cards-container .product-card img {
+  cursor: pointer;
   width: 280px;
   height: 250px;
   border-radius: 10px 10px 0 0px;
