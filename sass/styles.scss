@@ -110,7 +110,7 @@ body {
                         width: 17px;
                         height: 17px;
                         background-color: $hospital-green;
-                        border-radius: 40%;
+                        border-radius: 50%;
                         font-size: 10px;
                         position: absolute;
                         top: -6px;
@@ -125,11 +125,7 @@ body {
         }
     }
 }
-
-
-
-
-//! ==>Desktop menu
+//* ! ==>Desktop menu
 
 body {
     .inactive{
@@ -202,7 +198,7 @@ body {
     }
 }
 
-//! ==>mobile menu
+//* ! ==>mobile menu
 .inactive-mobile{
     opacity: 0;
     transition: 300ms;
@@ -252,7 +248,7 @@ body {
     }
 }
 
-//! aside ==> (product-detail)
+//* ! aside ==> (product-detail)
 
 .product-detail {
     width: 300px;
@@ -348,7 +344,7 @@ body {
 }
 
 
-//! ==>Aside->(shopping-cart-Detail.)
+//* ! ==>Aside->(shopping-cart-Detail.)
 
 aside {
     margin-right: 18px;
@@ -451,7 +447,7 @@ aside {
 }
 
 
-// ! ==> product List.
+//* ! ==> product List.
 .cards-container {
         margin: 0px 12px 40px 12px;
         padding: 24px 0;
@@ -501,7 +497,6 @@ aside {
                 
                 figure {
                     margin: 0;
-                    
                     img {
                         cursor: pointer;
                         margin-right: 10px;
@@ -509,7 +504,6 @@ aside {
                         height: 35px;
                         transition: transform 400ms;
                         &:hover{
-                            filter: grayscale(100%);
                             transform: scale(1.1);
                         }
                     }
@@ -531,7 +525,7 @@ aside {
 @import "mobile";
 
 
-//!desktop media screen
+//* !desktop media screen
 @media  screen and (min-width: 769px) {
     .mobile-menu{
         overflow: hidden;

@@ -137,7 +137,7 @@ function toggleShopCartMenu() {
 creacion de el HTML desde javaScript 
 
 <div class="product-card">
-<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+<img src="https://i.postimg.cc/C5z6mrrD/pexels-photo-276517.webp" alt="">
 
 div class="product-info">
 <div>
@@ -159,122 +159,122 @@ const productList = [];
 productList.push({
   name: 'Bici',
   price: 300,
-  Image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', 
+  Image: 'https://i.postimg.cc/C5z6mrrD/pexels-photo-276517.webp', 
 });
 productList.push({
   name: 'Computadora',
   price: 1200,
-  Image: 'https://i.blogs.es/37561e/superpc-1/450_1000.jpeg',  
+  Image: 'https://i.postimg.cc/QMBMpjhJ/450-1000.webp',  
 });
 productList.push({
   name: 'Ipad',
   price: 600,
-  Image: 'https://cdn.pocket-lint.com/r/s/1200x630/assets/images/149321-tablets-review-review-apple-ipad-102-inch-initial-review-tried-and-trusted-goes-bigger-image1-npbhfzogfj.jpg',  
+  Image: 'https://i.postimg.cc/nzdPKf2p/149321-tablets-review-review-apple-ipad-102-inch-initial-review-tried-and-trusted-goes-bigger-image1.webp',  
 });
 productList.push({
   name: 'Iphone',
   price: 1450,
-  Image: 'https://i.blogs.es/1f8068/iphone-12-mini-1-/840_560.jpg',  
+  Image: 'https://i.postimg.cc/7LkdwVb8/iphone.webp',  
 });
 productList.push({
   name: 'Calculadora',
   price: 60,
-  Image: 'https://www.mentesliberadas.com/wp-content/uploads/2013/04/calculadora-cientifica-casio-1024x624.jpg',  
+  Image: 'https://i.postimg.cc/sxqH8PbL/calculadora-cientifica-casio-1024x624.webp',  
 });
 productList.push({
   name: 'Teclado',
   price: 240,
-  Image: 'https://imagenes.elpais.com/resizer/5ZHoiuLyeC3PEx1cfrmw89gvjLs=/1960x1470/cloudfront-eu-central-1.images.arcpublishing.com/prisa/XT4KHFWNPZFHNDETQCDLFINJLU.png',  
+  Image: 'https://i.postimg.cc/d1QfTV85/XT4-KHFWNPZFHNDETQCDLFINJLU.webp',  
 });
 productList.push({
   name: 'Bici',
   price: 300,
-  Image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', 
+  Image: 'https://i.postimg.cc/C5z6mrrD/pexels-photo-276517.webp', 
 });
 productList.push({
   name: 'Computadora',
   price: 1200,
-  Image: 'https://i.blogs.es/37561e/superpc-1/450_1000.jpeg',  
+  Image: 'https://i.postimg.cc/QMBMpjhJ/450-1000.webp',  
 });
 productList.push({
   name: 'Ipad',
   price: 600,
-  Image: 'https://cdn.pocket-lint.com/r/s/1200x630/assets/images/149321-tablets-review-review-apple-ipad-102-inch-initial-review-tried-and-trusted-goes-bigger-image1-npbhfzogfj.jpg',  
+  Image: 'https://i.postimg.cc/nzdPKf2p/149321-tablets-review-review-apple-ipad-102-inch-initial-review-tried-and-trusted-goes-bigger-image1.webp',  
 });
 productList.push({
   name: 'Iphone',
   price: 1450,
-  Image: 'https://i.blogs.es/1f8068/iphone-12-mini-1-/840_560.jpg',  
+  Image: 'https://i.postimg.cc/7LkdwVb8/iphone.webp',  
 });
 productList.push({
   name: 'Calculadora',
   price: 60,
-  Image: 'https://www.mentesliberadas.com/wp-content/uploads/2013/04/calculadora-cientifica-casio-1024x624.jpg',  
+  Image: 'https://i.postimg.cc/sxqH8PbL/calculadora-cientifica-casio-1024x624.webp',  
 });
 productList.push({
   name: 'Teclado',
   price: 240,
-  Image: 'https://imagenes.elpais.com/resizer/5ZHoiuLyeC3PEx1cfrmw89gvjLs=/1960x1470/cloudfront-eu-central-1.images.arcpublishing.com/prisa/XT4KHFWNPZFHNDETQCDLFINJLU.png',  
+  Image: 'https://i.postimg.cc/d1QfTV85/XT4-KHFWNPZFHNDETQCDLFINJLU.webp',  
 });
 productList.push({
   name: 'Bici',
   price: 300,
-  Image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', 
+  Image: 'https://i.postimg.cc/C5z6mrrD/pexels-photo-276517.webp', 
 });
 productList.push({
   name: 'Computadora',
   price: 1200,
-  Image: 'https://i.blogs.es/37561e/superpc-1/450_1000.jpeg',  
+  Image: 'https://i.postimg.cc/QMBMpjhJ/450-1000.webp',  
 });
 productList.push({
   name: 'Ipad',
   price: 600,
-  Image: 'https://cdn.pocket-lint.com/r/s/1200x630/assets/images/149321-tablets-review-review-apple-ipad-102-inch-initial-review-tried-and-trusted-goes-bigger-image1-npbhfzogfj.jpg',  
+  Image: 'https://i.postimg.cc/nzdPKf2p/149321-tablets-review-review-apple-ipad-102-inch-initial-review-tried-and-trusted-goes-bigger-image1.webp',  
 });
 productList.push({
   name: 'Iphone',
   price: 1450,
-  Image: 'https://i.blogs.es/1f8068/iphone-12-mini-1-/840_560.jpg',  
+  Image: 'https://i.postimg.cc/7LkdwVb8/iphone.webp',  
 });
 productList.push({
   name: 'Calculadora',
   price: 60,
-  Image: 'https://www.mentesliberadas.com/wp-content/uploads/2013/04/calculadora-cientifica-casio-1024x624.jpg',  
+  Image: 'https://i.postimg.cc/sxqH8PbL/calculadora-cientifica-casio-1024x624.webp',  
 });
 productList.push({
   name: 'Teclado',
   price: 240,
-  Image: 'https://imagenes.elpais.com/resizer/5ZHoiuLyeC3PEx1cfrmw89gvjLs=/1960x1470/cloudfront-eu-central-1.images.arcpublishing.com/prisa/XT4KHFWNPZFHNDETQCDLFINJLU.png',  
+  Image: 'https://i.postimg.cc/d1QfTV85/XT4-KHFWNPZFHNDETQCDLFINJLU.webp',  
 })
 ;productList.push({
   name: 'Bici',
   price: 300,
-  Image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', 
+  Image: 'https://i.postimg.cc/C5z6mrrD/pexels-photo-276517.webp', 
 });
 productList.push({
   name: 'Computadora',
   price: 1200,
-  Image: 'https://i.blogs.es/37561e/superpc-1/450_1000.jpeg',  
+  Image: 'https://i.postimg.cc/QMBMpjhJ/450-1000.webp',  
 });
 productList.push({
   name: 'Ipad',
   price: 600,
-  Image: 'https://cdn.pocket-lint.com/r/s/1200x630/assets/images/149321-tablets-review-review-apple-ipad-102-inch-initial-review-tried-and-trusted-goes-bigger-image1-npbhfzogfj.jpg',  
+  Image: 'https://i.postimg.cc/nzdPKf2p/149321-tablets-review-review-apple-ipad-102-inch-initial-review-tried-and-trusted-goes-bigger-image1.webp',  
 });
 productList.push({
   name: 'Iphone',
   price: 1450,
-  Image: 'https://i.blogs.es/1f8068/iphone-12-mini-1-/840_560.jpg',  
+  Image: 'https://i.postimg.cc/7LkdwVb8/iphone.webp',  
 });
 productList.push({
   name: 'Calculadora',
   price: 60,
-  Image: 'https://www.mentesliberadas.com/wp-content/uploads/2013/04/calculadora-cientifica-casio-1024x624.jpg',  
+  Image: 'https://i.postimg.cc/sxqH8PbL/calculadora-cientifica-casio-1024x624.webp',  
 });
 productList.push({
   name: 'Teclado',
   price: 240,
-  Image: 'https://imagenes.elpais.com/resizer/5ZHoiuLyeC3PEx1cfrmw89gvjLs=/1960x1470/cloudfront-eu-central-1.images.arcpublishing.com/prisa/XT4KHFWNPZFHNDETQCDLFINJLU.png',  
+  Image: 'https://i.postimg.cc/d1QfTV85/XT4-KHFWNPZFHNDETQCDLFINJLU.webp',  
 });
 console.log(productList);
 

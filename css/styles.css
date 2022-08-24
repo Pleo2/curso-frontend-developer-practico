@@ -95,7 +95,7 @@ body nav .navbar-right ul .navbar-shopping-cart div {
   width: 17px;
   height: 17px;
   background-color: rgb(62, 58, 110);
-  border-radius: 40%;
+  border-radius: 50%;
   font-size: 10px;
   position: absolute;
   top: -6px;
@@ -431,7 +431,6 @@ aside .primary-button {
   transition: transform 400ms;
 }
 .cards-container .product-card .product-info figure img:hover {
-  filter: grayscale(100%);
   transform: scale(1.1);
 }
 
@@ -441,7 +440,7 @@ aside .primary-button {
   transition: 300ms;
 }
 
-@media screen and (max-width: 770px) {
+@media (max-width: 770px) {
   body {
     background-color: inherit;
   }
@@ -473,16 +472,16 @@ aside .primary-button {
     height: auto;
   }
   body .cards-container {
-    grid-template-columns: repeat(auto-fill, 150px);
+    grid-template-columns: repeat(auto-fill, 145px);
     padding: 12px 0 12px 0;
-    gap: 24px;
+    gap: 32px;
   }
   body .cards-container .product-card {
-    width: 150px;
+    width: 145px;
     padding: 0 0px 0px 0;
   }
   body .cards-container .product-card img {
-    width: 150px;
+    width: 145px;
     height: 125px;
     border-radius: 10px 10px 0 0;
     object-fit: cover;
@@ -519,7 +518,7 @@ aside .primary-button {
     transition: none;
   }
 }
-@media screen and (max-width: 770px) and (max-width: 771px) {
+@media (max-width: 770px) and (max-width: 770px) {
   .cards-container {
     grid-template-columns: repeat(auto-fill, 140px);
   }
@@ -531,7 +530,7 @@ aside .primary-button {
     height: 140px;
   }
 }
-@media screen and (max-width: 770px) and (min-width: 641px) {
+@media (max-width: 770px) and (min-width: 771px) {
   .mobile-menu {
     display: none;
   }
