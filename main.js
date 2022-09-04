@@ -74,7 +74,7 @@ function closeProductDetail() {
   //.efectBlur
   main.classList.remove('blur-darken');
 }
-//t solucion de el profesor
+//todo solucion de el profesor
 
 /*
 * ==>const-var
